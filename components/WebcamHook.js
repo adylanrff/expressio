@@ -105,8 +105,8 @@ export default function WebcamHook() {
                         style={styles.canvas} />
                 </div>
                 <div>
-                    {expressions.map((expression) => (
-                        <p>{getProbableExpresssions(expression)}</p>
+                    {expressions.map((expression, idx) => (
+                        <p key={idx}>{getProbableExpresssions(expression)}</p>
                     ))}
                 </div>
             </div>
